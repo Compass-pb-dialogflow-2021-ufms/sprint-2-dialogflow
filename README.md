@@ -14,7 +14,7 @@ Segunda sprint do programa de bolsas Compass.uol para formação em chatbot Dial
 
 ## Entrega
 
-- Aceitar o convite do repositório da sprint-2-dialogflow;
+- Aceitar o convite do repositório da sprint-2-dialogflow; 
 
 - Criar uma branch no repositório com o formato nome-sobrenome;
 
