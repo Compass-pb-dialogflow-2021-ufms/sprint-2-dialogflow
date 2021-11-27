@@ -1,0 +1,8 @@
+{
+    "mongo": {
+        "con" : "mongodb+srv://ragnarokapi:ragnarokapi123@cluster0.wyxuu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    },
+    "api": {
+        "port": 3030
+    }
+}
