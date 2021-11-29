@@ -29,6 +29,9 @@ module.exports = {
 
     async buscaEspecifica(id){
         const resultado = await Celular.findById({_id : `${mongoose.Types.ObjectId(id)}`}).lean();
+        if(!resultado){
+            throw new Error("Celular não encontrado");
+        }
         return resultado;
     }
 
