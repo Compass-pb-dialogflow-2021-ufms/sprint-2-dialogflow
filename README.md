@@ -15,7 +15,8 @@ Para iniciar a aplicação, deve-se ter o MongoDB e Node.JS na maquina.
 1- Na pasta do projeto, abra o terminal e digite npm install para instalar todas as dependencias.
 2- Após instalar, digite npm start para iniciar a aplicação
 3- Agora é so testar as rotas que se encontram em http://localhost:3000/jogos
-Rotas no Heroku:
+
+## Rotas no Heroku:
 POST E GET
 https://compassojogos.herokuapp.com/jogos
 GET, DELETE E PATCH com um jogo de exemplo
