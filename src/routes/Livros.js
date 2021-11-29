@@ -1,20 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.send({ msg: "Rota GET para livros." })
-})
+const livroController = require('../controllers/Livro')
 
-router.post('/', (req, res) => {
-    res.send({ msg: "Rota POST para livros." })
-})
+router.get('/', livroController.buscarLivros)
 
-router.put('/', (req, res) => {
-    res.send({ msg: "Rota PUT para livros." })
-})
+router.post('/', livroController.inserirLivro)
 
-router.delete('/', (req, res) => {
-    res.send({ msg: "Rota DELETE para livros." })
-})
+router.put('/', livroController.atualizarLivro)
+
+router.delete('/', livroController.deletarLivro)
 
 module.exports = router

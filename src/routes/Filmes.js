@@ -1,20 +1,14 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.send({ msg: "Rota GET para filmes." })
-})
+const filmeController = require('../controllers/Filme')
 
-router.post('/', (req, res) => {
-    res.send({ msg: "Rota POST para filmes." })
-})
+router.get('/', filmeController.buscarFilmes)
 
-router.put('/', (req, res) => {
-    res.send({ msg: "Rota PUT para filmes." })
-})
+router.post('/', filmeController.inserirFilme)
 
-router.delete('/', (req, res) => {
-    res.send({ msg: "Rota DELETE para filmes." })
-})
+router.put('/', filmeController.atualizarFilme)
+
+router.delete('/', filmeController.deletarFilme)
 
 module.exports = router
