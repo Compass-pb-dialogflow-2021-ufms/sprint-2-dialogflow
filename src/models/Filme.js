@@ -9,7 +9,7 @@ const FilmeSchema = new mongoose.Schema({
     diretor: {
         type: String
     },
-    anoLacamento: {
+    anoLancamento: {
         type: String
     },
     critica: {
@@ -18,3 +18,5 @@ const FilmeSchema = new mongoose.Schema({
 })
 
 const Filme = mongoose.model('Filme', FilmeSchema)
+
+module.exports = Filme

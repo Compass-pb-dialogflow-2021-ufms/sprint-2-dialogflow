@@ -18,3 +18,5 @@ const LivroSchema = new mongoose.Schema({
 })
 
 const Livro = mongoose.model('Livro', LivroSchema)
+
+module.exports = Livro
