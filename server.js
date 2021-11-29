@@ -3,6 +3,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
+var cors = require('cors')
+
+app.use(cors())
 
 //Minha url do banco no Mongo dentro do .env
 mongoose.connect(process.env.DATABASE_URL, {useNewUrlParser: true})
