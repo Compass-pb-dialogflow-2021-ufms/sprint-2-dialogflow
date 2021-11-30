@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <title>Sistema de Registro</title>
+</head>
+<body>
+    <h2>Editar registros</h2>
+        <% data.forEach(function(details) { %>
+            <form action="/edit/<%= details._id %>" method="POST">
+                <input type="text" value="<%= details.name %>" name="name">
+                <input type="text" value="<%= details.surname %>" name="surname">
+                <br />
+                <button><a href="/records">Cancelar</a></button>
+                <button type="submit">Editar</button>
+            </form>
+       <% }) %>
+    
+</body>
+</html>

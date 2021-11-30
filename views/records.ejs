@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Alunos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+</head>
+<body>
+
+<h2>Registro de Alunos<h2>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Matrícula</th>
+                <th>Atualizar</td>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% data.forEach(function(details) { %>
+            <tr>
+                <td><%= details.name %></td>
+                <td><%= details.surname %></td>
+                <td><%= details.registration %></td>
+                <td><a href="/edit/<%= details._id%>" action="/edit">Editar</a></td>
+                <td><a href="/delete/<%= details._id%>">Deletar</a></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <button><a href="/">Novo Aluno</a></button>
+</body>
+</html>
