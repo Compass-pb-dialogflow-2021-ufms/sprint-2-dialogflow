@@ -1,23 +1,48 @@
-# Avaliação Sprint 2 - Programa de Bolsas Compass.uol e UFMS
+<p> Projeto é um CRUD simples de uma lista de contatos. Foi utilizado o deploy pelo Heroku CLI para subir a api no Heroku
+</p>
 
-Segunda sprint do programa de bolsas Compass.uol para formação em chatbot Dialogflow.
+ Utilizado para desenvolvimento da api:
+  
+ -   Express.js: facilitar o desenvolvimento da api
+ -  Moongose: lib para trabalhar com o mongodb no nodejs
+    
+Aplicação disponivel em https://nodejs-contato-api.herokuapp.com/
+
+Funcionamento:
+
+* Utilizar um aplicativo para testar as rotas, como POSTMAN.
+
+* URI = https://nodejs-contato-api.herokuapp.com/
+
+Todas as rotas seguem o padrão URI/api/contatos ou URI/api/contatos/:id
+dessa forma:
+
+```
+GET     URI/api/contatos     -> Lista todos contatos
+```
+```
+GET     URI/api/contatos/:id -> Lista contato especifico, identificado a partir do id
+```
+```
+POST    URI/api/contatos     -> Adiciona novo contato passando no body o senguinte formato json: 
+        {
+            "nome": "",
+            "email": [" ", " "],
+            "telefone": [" "]
+        }
+```
+```
+ PUT    URI/api/contatos/:id  -> Altera algum dado do contato especifico (semelhante ao POST, informar no body os dados para alterar)
+     {
+      "nome": "",
+      "email": [""],
+      "telefone": [""],
+     }
+```
+```
+DELETE  URI/api/contatos/:id  -> Remove contato especifico
+```
 
 
-## Execução
-
-- Criar CRUD em Nodejs com rotas GET, POST, PUT, DELETE;
-
-- Armazenar as consultas no MongoDB;
-
-- Utilizar de Firebase para subir API;
 
 
-## Entrega
-
-- Aceitar o convite do repositório da sprint-2-dialogflow;
-
-- Criar uma branch no repositório com o formato nome-sobrenome;
-
-- Subir o trabalho na branch com um readme.md, documentando detalhes sobre como a avaliação foi desenvolvida e como utilizar o sistema.
-
-- O prazo de entrega é até às 13h do dia 30/11 no repositório do github (https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-2-dialogflow).
