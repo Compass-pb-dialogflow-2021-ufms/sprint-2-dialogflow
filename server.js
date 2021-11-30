@@ -18,7 +18,8 @@ MongoClient.connect(process.env.URI, (error, client) => {
   }
   db = client.db("Node-API");
   // informa no terminal onde a aplicação está rodando
-  app.listen(3000, () => {
+  const port_number = (process.env.PORT || 3000);
+  app.listen(port_number, () => {
     console.log("Servidor está na porta 3000");
   });
 });
