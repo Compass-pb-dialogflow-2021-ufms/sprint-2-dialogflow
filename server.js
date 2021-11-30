@@ -23,6 +23,6 @@ mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@entregasprint2.xcqrc.m
 .then(() =>
 {
     console.log('Banco de dados conectado!')
-    app.listen(5000, ()=> {console.log('Servidor Rodando!!!')})
+    app.listen(process.env.PORT, ()=> {console.log('Servidor Rodando!!!')})
 })
 .catch((erro) => console.log(erro))
