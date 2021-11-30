@@ -17,9 +17,9 @@ app.use('/game', roteador)
 //credenciais do banco de dados
 const DB_USER = process.env.DB_USER
 const DB_PASSWORD = process.env.DB_PASSWORD
+const uri = process.env.MONGODB_URI
 
-
-mongoose.connect(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@entregasprint2.xcqrc.mongodb.net/bancodaapi?retryWrites=true&w=majority`)
+mongoose.connect(uri)
 .then(() =>
 {
     console.log('Banco de dados conectado!')
