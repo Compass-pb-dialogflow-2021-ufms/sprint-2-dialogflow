@@ -11,6 +11,7 @@
             <form action="/edit/<%= details._id %>" method="POST">
                 <input type="text" value="<%= details.name %>" name="name">
                 <input type="text" value="<%= details.surname %>" name="surname">
+                <input type="text" value="<%= details.registration %>" name="registration">
                 <br />
                 <button><a href="/records">Cancelar</a></button>
                 <button type="submit">Editar</button>
