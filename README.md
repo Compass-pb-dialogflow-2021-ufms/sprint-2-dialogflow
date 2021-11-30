@@ -18,7 +18,12 @@ Para iniciar a aplicação, deve-se ter o MongoDB e Node.JS na maquina.
 3- Agora é so testar as rotas que se encontram em http://localhost:3000/jogos
 
 ## Rotas no Heroku:
-POST E GET
+POST E GET - rotas onde pode-se pegar todos os jogos já criados e adicionar mais alguns com o POST.
 <li>https://compassojogos.herokuapp.com/jogos</li>
-GET, DELETE E PATCH com um jogo de exemplo
+GET, DELETE E PATCH onde se deve passar um ID de um jogo já criado no banco e escolhendo dentre uma das requisições.
 <li>https://compassojogos.herokuapp.com/jogos/61a2340ef82db3b5c242df89</li>
+
+- Exemplo de informações necessárias no Body:
+  * "nome" : "Returnal"
+  * "nota" : 10
+  * "genero" : "Roguelike"
