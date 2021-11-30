@@ -4,7 +4,7 @@
   "description": "Segunda sprint do programa de bolsas Compass.uol para formação em chatbot Dialogflow.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,6 +16,11 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-2-dialogflow/issues"
+  },
+
+  "engines": {
+    "node": "17.1.0",
+    "npm": "8.1.2"
   },
   "homepage": "https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-2-dialogflow#readme",
   "dependencies": {
