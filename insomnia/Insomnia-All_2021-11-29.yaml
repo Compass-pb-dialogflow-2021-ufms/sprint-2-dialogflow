@@ -1,0 +1,393 @@
+_type: export
+__export_format: 4
+__export_date: 2021-11-30T00:19:30.097Z
+__export_source: insomnia.desktop.app:v2021.4.1
+resources:
+  - _id: req_498d511fd76f4814ac03a3575b2b7fbe
+    parentId: fld_72d853dca37a43cbbf1a18b94c5a90da
+    modified: 1638219539021
+    created: 1638127760845
+    url: https://hqrestapishow.herokuapp.com/autor
+    name: autor
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638128380252
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_72d853dca37a43cbbf1a18b94c5a90da
+    parentId: wrk_3974ff43a63e4f8e9f797587fb147bca
+    modified: 1638130683388
+    created: 1626187045475
+    name: autor
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1626187045475
+    _type: request_group
+  - _id: wrk_3974ff43a63e4f8e9f797587fb147bca
+    parentId: null
+    modified: 1622679704380
+    created: 1622679704380
+    name: Insomnia
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_ec9c64bd1b254c2c91f3535328e3bef3
+    parentId: fld_72d853dca37a43cbbf1a18b94c5a90da
+    modified: 1638219582843
+    created: 1638127916841
+    url: https://hqrestapishow.herokuapp.com/autor
+    name: autor
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-2
+         {
+            "nome_autor": "Mário",
+            "data_nasc": "03/04/1960",
+            "cidade": "São Paulo (SP)"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c5719903f85d4e7aacdb3d11e84df833
+    authentication: {}
+    metaSortKey: -1638128380227
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e1e71c5140c148e48d3e8edd5af9c183
+    parentId: fld_72d853dca37a43cbbf1a18b94c5a90da
+    modified: 1638225798930
+    created: 1638128113448
+    url: https://hqrestapishow.herokuapp.com/autor/Mário
+    name: autor
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "nome_autor": "Mário Brother",
+            "data_nasc": "03/04/1960",
+            "cidade": "São Paulo (SP)"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8eac65578d85412cb4cfe4f0349fd765
+    authentication: {}
+    metaSortKey: -1638128380214.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5c3b42896eb94c4395e20590c5bdcba2
+    parentId: fld_72d853dca37a43cbbf1a18b94c5a90da
+    modified: 1638225843322
+    created: 1638128380202
+    url: https://hqrestapishow.herokuapp.com/autor/Mário Brother
+    name: autor
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638128380202
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_040ede39191140508cbaeb809190eb45
+    parentId: fld_e61f631ed5b8409880f53cd7713be76e
+    modified: 1638219657427
+    created: 1638130727881
+    url: https://hqrestapishow.herokuapp.com/revista
+    name: revista
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638128380252
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_e61f631ed5b8409880f53cd7713be76e
+    parentId: wrk_3974ff43a63e4f8e9f797587fb147bca
+    modified: 1638130727878
+    created: 1638130727878
+    name: revista
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1626187045425
+    _type: request_group
+  - _id: req_2fc2ae2846144f55ab6f26e0451b4b10
+    parentId: fld_e61f631ed5b8409880f53cd7713be76e
+    modified: 1638225704688
+    created: 1638130727885
+    url: https://hqrestapishow.herokuapp.com/revista
+    name: revista
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-2
+         {
+            "nome_revista": "Nova Revista",
+            "genero_revista": "Aventura, Comédia",
+            "nome_autor": "Teste"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c5719903f85d4e7aacdb3d11e84df833
+    authentication: {}
+    metaSortKey: -1638128380227
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c60675dfc959429a86c58f5faf3b713e
+    parentId: fld_e61f631ed5b8409880f53cd7713be76e
+    modified: 1638225740647
+    created: 1638130727888
+    url: https://hqrestapishow.herokuapp.com/revista/Nova Revista
+    name: revista
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-2
+         {
+            "nome_revista": "Nova Revista Alterada",
+            "genero_revista": "Aventura, Comédia",
+            "nome_autor": "Teste"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8eac65578d85412cb4cfe4f0349fd765
+    authentication: {}
+    metaSortKey: -1638128380214.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_696f8932aa5d4620901fd137383814e2
+    parentId: fld_e61f631ed5b8409880f53cd7713be76e
+    modified: 1638225761650
+    created: 1638130727890
+    url: https://hqrestapishow.herokuapp.com/revista/Nova Revista Alterada
+    name: revista
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638128380202
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5d819fe0c85a4dc18c86e8e54a006e32
+    parentId: fld_f9ce01813a674444afcdfb247eff128e
+    modified: 1638225902495
+    created: 1638132669426
+    url: https://hqrestapishow.herokuapp.com/editora
+    name: revista
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638128380252
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f9ce01813a674444afcdfb247eff128e
+    parentId: wrk_3974ff43a63e4f8e9f797587fb147bca
+    modified: 1638132669423
+    created: 1638132669423
+    name: editora
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1626187045375
+    _type: request_group
+  - _id: req_a0bb9b159ff84ae59c2e9a959ced9d40
+    parentId: fld_f9ce01813a674444afcdfb247eff128e
+    modified: 1638225956723
+    created: 1638132669429
+    url: https://hqrestapishow.herokuapp.com/editora
+    name: revista
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "nome_editora": "Capivara Editora",
+            "preco": "R$ 05,00",
+            "CNPJ": "XX. XXX. XXX/0001-XX",
+            "nome_revista": "Sambna Animal Sexy"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c5719903f85d4e7aacdb3d11e84df833
+    authentication: {}
+    metaSortKey: -1638128380227
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_db1eef2ca0a54f7faab408497dd4cadd
+    parentId: fld_f9ce01813a674444afcdfb247eff128e
+    modified: 1638225999728
+    created: 1638132669431
+    url: https://hqrestapishow.herokuapp.com/editora/Capivara Editora
+    name: revista
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "nome_editora": "Capivara Editora Alterada",
+            "preco": "R$ 05,00",
+            "CNPJ": "XX. XXX. XXX/0001-XX",
+            "nome_revista": "Sambna Animal Sexy"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8eac65578d85412cb4cfe4f0349fd765
+    authentication: {}
+    metaSortKey: -1638128380214.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9f06802448af4fcb952526074b7d3661
+    parentId: fld_f9ce01813a674444afcdfb247eff128e
+    modified: 1638226048055
+    created: 1638132669434
+    url: https://hqrestapishow.herokuapp.com/editora/Capivara Editora Alterada
+    name: revista
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638128380202
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_d7f399f3c0f5c4ece0d5394b5607de5957fc634b
+    parentId: wrk_3974ff43a63e4f8e9f797587fb147bca
+    modified: 1622679704437
+    created: 1622679704437
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1622679704437
+    _type: environment
+  - _id: jar_d7f399f3c0f5c4ece0d5394b5607de5957fc634b
+    parentId: wrk_3974ff43a63e4f8e9f797587fb147bca
+    modified: 1625760598346
+    created: 1622679704440
+    name: Default Jar
+    cookies:
+      - key: dsc
+        value: b6b1e5d5023794efe21a49ca77a043854ab78f2b8874fb0da10bb5cab649324c
+        expires: 2021-07-11T16:09:56.000Z
+        domain: api.trello.com
+        path: /
+        secure: true
+        hostOnly: true
+        creation: 2021-07-08T16:09:58.339Z
+        lastAccessed: 2021-07-08T16:09:58.339Z
+        id: "08403211616325579"
+    _type: cookie_jar
+  - _id: spc_84e8a73075514b5e885088f00248111f
+    parentId: wrk_3974ff43a63e4f8e9f797587fb147bca
+    modified: 1622679704381
+    created: 1622679704381
+    fileName: Insomnia
+    contents: ""
+    contentType: yaml
+    _type: api_spec
