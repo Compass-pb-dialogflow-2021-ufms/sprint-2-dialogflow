@@ -52,4 +52,4 @@ A API funciona com o express, e o router, onde toda responsabilidade do roteamen
 
 ## Deploy
 
-- A deploy foi feito no heroku, e pode ser acessado pelo link: https://api-ragnarok-backend.herokuapp.com/
+- A deploy foi feito no heroku, e pode ser acessado pelo link: https://api-ragnarok-backend.herokuapp.com/api/items
